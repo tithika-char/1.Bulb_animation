@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulbanimation</title>
+    <script src="jquery/jquery.js"></script>
+    <style>
+        img{
+            width: 400px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <img src="image\bulboff.webp" id="b1">
+    <img src="image\bulbon.webp" id="b2">
+
+</body>
+<script>
+   
+   $(document).ready(function(){
+        $("#b2").hide()
+        $('#b1').mouseenter(function(){
+            
+            $(this).hide()
+            $("#b2").show()
+        })
+
+        $("#b2").mouseleave(function(){
+      
+        
+            $(this).hide()
+            $("#b1").show()
+        })
+    })
+
+
+</script>
+</html>
